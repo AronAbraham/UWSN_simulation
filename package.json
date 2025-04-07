@@ -1,0 +1,56 @@
+{
+  "name": "uwsn-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^8.0.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.0.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.8",
+    "three": "^0.149.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "fix-mesh-bvh": "node fix-mesh-bvh.js",
+    "postinstall": "npm run fix-mesh-bvh"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "ignorePatterns": [
+      "node_modules/@mediapipe/**"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "overrides": {
+    "source-map-loader": {
+      "webpack": "5.88.0"
+    }
+  },
+  "devDependencies": {
+    "patch-package": "^8.0.0",
+    "react-app-rewired": "^2.2.1",
+    "string-replace-loader": "^3.1.0"
+  }
+}
